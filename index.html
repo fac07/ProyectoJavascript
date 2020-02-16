@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Seguros TK-U -- Cotizador</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js" ></script>
+	<script type="text/javascript" src="js/Procesos.js" ></script>
 </head>
 <body>
-
-
-<script type="text/javascript" src="js/Procesos.js" ></script>
+<form>
+<ul class="form-style-1">
+    <li>
+        <input id="BtnVersionJavascript" type="button" value="Versión javascript" />
+    </li>
+    <li>
+    </li>
+    <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+    <li>
+        <label>Email <span class="required">*</span></label>
+        <input type="email" name="field3" class="field-long" />
+    </li>
+    <li>
+        <label>Subject</label>
+        <select name="field4" class="field-select">
+        <option value="Advertise">Advertise</option>
+        <option value="Partnership">Partnership</option>
+        <option value="General Question">General</option>
+        </select>
+    </li>
+    <li>
+        <label>Your Message <span class="required">*</span></label>
+        <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+    </li>
+    <li>
+        <input type="submit" value="Cotizar" />
+    </li>
+</ul>
+</form>
+<div id="DivRespuesta"></div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#BtnVersionJavascript").click(function(){
+			var respuesta = SolicitarInfo();
+			$("#DivRespuesta").html(respuesta);
+		});
+	});
+</script>
 </body>
 </html>
