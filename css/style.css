@@ -1,3 +1,4 @@
+
 .form-style-1 {
 	margin:10px auto;
 	max-width: 400px;
@@ -61,7 +62,7 @@ select{
 	width: 100%;
 }
 .form-style-1 .field-select{
-	width: 100%;
+	width: 30%;
 }
 .form-style-1 .field-textarea{
 	height: 100px;
@@ -80,4 +81,14 @@ select{
 }
 .form-style-1 .required{
 	color:red;
+}
+
+.strong{
+	font-weight: bold;
+}
+.centrado{
+	text-align: center;
+}
+.oculto{
+	display: none !important;
 }
