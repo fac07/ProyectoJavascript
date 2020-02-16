@@ -2,6 +2,5 @@
 
 ## Datos personales
 
-Nombre: Cristian Castellanos
-
+Nombre: Cristian Castellanos  
 Carné: 20002582
